@@ -35,6 +35,7 @@ public class Lesson1 {
                 "_______________________8888_____________\n");
         System.out.println("\uD83D\uDE0A");
         System.out.println("😊");
+        System.out.println("😊");
 
     }
 }
