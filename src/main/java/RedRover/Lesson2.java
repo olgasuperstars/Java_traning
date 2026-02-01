@@ -1,0 +1,42 @@
+package RedRover;
+
+import java.util.Scanner;
+
+public class Lesson2 {
+    public static void main(String[] args) {
+        int a = 11;
+        int b = 2;
+
+        System.out.println((a+b) + "; " + (a-b) + "; " + (a/b)  + "; " + (a*b) + "; " + (a%b));
+
+        if (a%2 == 0) {
+            System.out.println(a);
+        }
+        if (b%2 == 0) {
+            System.out.println(b);
+        }
+        System.out.println("a = "+ a + "; b = " + b);
+        int c = a;
+        a = b;
+        b = c;
+        System.out.println("a = "+ a + "; b = " + b);
+
+
+        int team = 10;
+        double duoblon = 30;
+        double cash;
+        cash = duoblon / 2;
+        System.out.println("Владелец корабля получит " + cash + " дублонов");
+        cash = (duoblon - cash) / 2;
+        System.out.println("Капитан получит " + cash + " дублонов");
+        cash = ((duoblon - duoblon / 2) - cash) / team;
+        System.out.println("Члены команды получат по " + cash + " дублонов");
+        cash = (duoblon / 2) + ((duoblon - (duoblon / 2)) / 2);
+        System.out.println("Джек Воробей получит " + cash + " дублонов");
+
+
+
+
+
+    }
+}
