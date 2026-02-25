@@ -1,4 +1,4 @@
-package RedRover;
+package RedRover.HW6;
 
 import java.util.Arrays;
 
