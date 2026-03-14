@@ -1,19 +1,19 @@
-package RedRover.HW8;
+package RedRover.HW8_HW10;
 //    Создать класс MonthUtils который бы хранил подготовленные месяцы или их массивы для использования (объекты класса Month).
 
 public class MonthUtils {
-    static Month january = new Month();
-    static Month february = new Month();
-    static Month march = new Month();
-    static Month april = new Month();
-    static Month may = new Month();
-    static Month june = new Month();
-    static Month july = new Month();
-    static Month august = new Month();
-    static Month september = new Month();
-    static Month october = new Month();
-    static Month november = new Month();
-    static Month december = new Month();
+    static Month january = new Month("January", 31, 21);
+    static Month february = new Month("February", 28, 31);
+    static Month march = new Month("March", 31, 22);
+    static Month april = new Month("April", 30, 21);
+    static Month may = new Month("May", 31, 22);
+    static Month june = new Month("June", 30, 21);
+    static Month july = new Month("July", 31, 22);
+    static Month august = new Month("August", 31, 23);
+    static Month september = new Month("September",  30, 21);
+    static Month october = new Month("October",31,22);
+    static Month november = new Month("November",30,20);
+    static Month december = new Month("December",31,20);
     static Month[] months = {january, february, march, april, may, june, july, august, september, october, november, december};
 static {
     january.nameOfMonth = "January";
