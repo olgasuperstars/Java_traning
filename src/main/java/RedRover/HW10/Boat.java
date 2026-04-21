@@ -1,7 +1,7 @@
 package RedRover.HW10;
 
-public class Boats extends WaterTransport{
-    public Boats(int velocity) {
+public class Boat extends WaterTransport{
+    public Boat(int velocity) {
         super(velocity);
     }
     private double maxDraftMeters;

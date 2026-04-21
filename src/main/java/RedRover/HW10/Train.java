@@ -1,7 +1,7 @@
 package RedRover.HW10;
 
-public class Trains extends LandTransport {
-    public Trains(int velocity) {
+public class Train extends LandTransport {
+    public Train(int velocity) {
         super(velocity);
     }
     private int wagonCount;
