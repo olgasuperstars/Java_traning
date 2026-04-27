@@ -46,7 +46,7 @@ else {
     public static List<Object> filterList(final List<Object> list) {
        return list.stream()
                .filter(item -> item instanceof Integer)
-               .collect(Collectors.toList());
+               .toList();
 
 
     }
