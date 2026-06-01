@@ -2,6 +2,7 @@ package Codwares;
 import java.util.List;
 import java.util.ArrayList;
 
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class NewTraining {
@@ -57,5 +58,24 @@ else {
 
 }
         return sum;
+    }
+    public static Map<Character, Integer> count(String str) {
+        return str.chars()
+                .mapToObj(c -> (char) c)
+                .collect(Collectors.groupingBy(c -> c, Collectors.summingInt(c -> 1)));
+
+    }
+    public static int[] moveZerosToStart(int[] arr) {
+        int[] result = new int[arr.length];
+        int index = arr.length - 1;
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (arr[i] != 0) {
+                result[index] = arr[i];
+                index--;
+            }
+        }
+
+        return result;
     }
 }
